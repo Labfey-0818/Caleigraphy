@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFB6C1;
+  padding: 1rem 2rem;
+}
+
+.navbar a {
+  color: #000000;
+  text-decoration: none;
+  margin-left: 1rem;
+  font-size: 1rem;
+}
+
+.navbar .brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #101010;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 90vh;
+  background: #000000;
+  color: #ffffff;
+  padding: 2rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+}
+
+.hero button {
+  margin-top: 2rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.hero button:hover {
+  background-color: #ddd;
+}
+
+.About {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 90vh;
+  background-color: #FFB6C1; 
+  padding: 2rem;
+}
+
+
+.About h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #333333; 
+  margin-bottom: 1.5rem;
+  font-family: 'Georgia', serif; 
+}
+.About h1 {
+  font-family: 'Great Vibes', cursive;
+}
+
+
+
+.About p {
+  max-width: 700px;
+  font-size: 1.2rem;
+  color: #333333; 
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+
