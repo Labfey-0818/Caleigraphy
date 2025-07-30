@@ -14,7 +14,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #FFB6C1;
+  background-color: #FFD166;
   padding: 1rem 2rem;
 }
 
@@ -39,7 +39,10 @@ body {
   align-items: center;
   text-align: center;
   height: 90vh;
-  background: #000000;
+  background-image: url("https://images.pexels.com/photos/16516/pexels-photo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: #ffffff;
   padding: 2rem;
 }
@@ -67,7 +70,7 @@ body {
 }
 
 .hero button:hover {
-  background-color: #ddd;
+  background-color: #FFDE7D;
 }
 
 .About {
@@ -77,7 +80,7 @@ body {
   align-items: center;
   text-align: center;
   height: 90vh;
-  background-color: #FFB6C1; 
+  background-color: #F4D35E; 
   padding: 2rem;
 }
 
@@ -105,3 +108,32 @@ body {
 }
 
 
+/*Services*/
+.Services{
+  padding: 4rem 2rem;
+  background-color: #F4D35E;
+  text-align: center;
+}
+.service-title{
+  font-family: 'Great Vibes', cursive;
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 3rem;
+}
+.services-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-card{
+  background-color: #FFD166;
+  border-radius: 10px;
+  padding: 2rem;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
