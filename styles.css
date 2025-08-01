@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  margin-top: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Segoe UI', sans-serif;
@@ -15,7 +16,36 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #FFD166;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  margin: 0;
   padding: 1rem 2rem;
+
+  animation: 
+    colorPulse 2s ease-in-out forwards,
+    stickynav 0.5s ease-out forwards;
+    animation-timeline: view();
+}
+
+@keyframes colorPulse {
+  0% {
+    background-color: #FFD166;
+  }
+  100% {
+    background-color: #cc8f00;
+  }
+}
+
+@keyframes stickynav {
+  100% {
+    box-shadow: 0 0.075rem 0.5rem hsla(0, 0%, 0%, 0.075);
+  }
 }
 
 .navbar a {
@@ -50,14 +80,20 @@ body {
 .hero h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
+  font-family: 'Great Vibes', cursive;
 }
 
 .hero p {
   font-size: 1.2rem;
   max-width: 600px;
 }
+.hero a{
+  text-decoration: none;
+  color: #000000;
+}
 
-.hero button {
+.hero button{
+  text-decoration: none;
   margin-top: 2rem;
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
@@ -72,6 +108,7 @@ body {
 .hero button:hover {
   background-color: #FFDE7D;
 }
+
 
 .About {
   display: flex;
@@ -175,3 +212,4 @@ body {
     width: 80%;
   }
 }
+
